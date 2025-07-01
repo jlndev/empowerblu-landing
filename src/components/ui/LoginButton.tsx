@@ -1,10 +1,9 @@
 "use client";
 
 import config from '@/config';
-import { ButtonHTMLAttributes } from 'react';
 import Link from 'next/link';
 
-interface LoginButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onClick'> {
+interface LoginButtonProps {
   className?: string;
   variant?: 'primary' | 'secondary' | 'outline' | 'text';
 }
@@ -12,7 +11,6 @@ interface LoginButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>,
 export default function LoginButton({
   className = '',
   variant = 'text',
-  ...props
 }: LoginButtonProps) {
   const variantClasses = {
     primary: 'bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md',
