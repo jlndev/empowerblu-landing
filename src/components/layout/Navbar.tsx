@@ -14,8 +14,9 @@ export default function Navbar() {
   return (
     <header className="fixed w-full bg-white/80 backdrop-blur-md z-10 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-          EmpowerBlu
+        <Link href="/" className="text-2xl font-bold">
+          <span className="text-gray-900">Empower</span>
+          <span className="text-blue-600">Blu</span>
         </Link>
         
         {/* Desktop Navigation */}

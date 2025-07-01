@@ -13,7 +13,8 @@ export default function Hero() {
             Run Your Trade Business <span className="text-blue-600">Better</span>
           </h1>
           <p className="text-xl text-gray-700 mb-8">
-            EmpowerBlu is the all-in-one CRM and job management software built specifically for contractors, tradesmen, and field service companies.
+            <span className="text-gray-900 font-semibold">Empower</span>
+            <span className="text-blue-600 font-semibold">Blu</span> is the all-in-one CRM and job management software built specifically for contractors, tradesmen, and field service companies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="#contact" variant="primary">
