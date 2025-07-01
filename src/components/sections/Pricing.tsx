@@ -1,5 +1,5 @@
-import Section from './ui/Section';
-import Button from './ui/Button';
+import Section from '../ui/Section';
+import Button from '../ui/Button';
 
 export default function Pricing() {
   const plans = [

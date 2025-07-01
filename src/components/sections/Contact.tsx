@@ -1,9 +1,11 @@
-import Section from './ui/Section';
-import Button from './ui/Button';
-import Input from './ui/Input';
-import TextArea from './ui/TextArea';
-import Select from './ui/Select';
-import Checkbox from './ui/Checkbox';
+"use client";
+
+import Section from '../ui/Section';
+import Button from '../ui/Button';
+import Input from '../ui/Input';
+import TextArea from '../ui/TextArea';
+import Select from '../ui/Select';
+import Checkbox from '../ui/Checkbox';
 
 export default function Contact() {
   return (

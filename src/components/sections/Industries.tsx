@@ -1,5 +1,5 @@
-import Section from './ui/Section';
-import Card from './ui/Card';
+import Section from '../ui/Section';
+import Card from '../ui/Card';
 
 export default function Industries() {
   const industries = [

@@ -1,5 +1,5 @@
-import Button from './ui/Button';
-import Section from './ui/Section';
+import Button from '../ui/Button';
+import Section from '../ui/Section';
 
 export default function Hero() {
   return (

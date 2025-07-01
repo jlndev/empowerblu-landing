@@ -1,21 +1,18 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Features from "@/components/Services";
-import Industries from "@/components/About";
-import Pricing from "@/components/Pricing";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Layout from "@/components/layout/Layout";
+import Hero from "@/components/sections/Hero";
+import Features from "@/components/sections/Features";
+import Industries from "@/components/sections/Industries";
+import Pricing from "@/components/sections/Pricing";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
+    <Layout>
       <Hero />
       <Features />
       <Industries />
       <Pricing />
       <Contact />
-      <Footer />
-    </main>
+    </Layout>
   );
 }
