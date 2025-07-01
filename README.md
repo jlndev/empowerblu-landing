@@ -34,10 +34,26 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Environment Variables
+
+The application uses environment variables to handle different environments. Create a `.env.local` file in the root directory with the following variables:
+
+```
+# App URLs
+NEXT_PUBLIC_APP_URL=http://localhost:3000 # For local development
+# NEXT_PUBLIC_APP_URL=https://app.empowerblu.com # For production
+```
+
+In production, these variables should be set in your hosting platform (e.g., Vercel).
+
 ## Project Structure
 
 - `src/app` - Next.js app router pages
 - `src/components` - Reusable UI components
+  - `layout` - Layout components (Navbar, Footer)
+  - `sections` - Page sections (Hero, Features, etc.)
+  - `ui` - Reusable UI components (Button, Input, etc.)
+- `src/config` - Configuration files
 - `public` - Static assets
 
 ## Customization
@@ -50,7 +66,8 @@ The easiest way to deploy this landing page is with [Vercel](https://vercel.com)
 
 1. Push your code to a Git repository (GitHub, GitLab, Bitbucket)
 2. Import the project in Vercel
-3. Deploy
+3. Set up environment variables in the Vercel dashboard
+4. Deploy
 
 Alternatively, you can build the project locally and deploy the output:
 

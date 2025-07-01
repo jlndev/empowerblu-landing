@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import LoginButton from '../ui/LoginButton';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,30 +19,33 @@ export default function Navbar() {
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
-          <ul className="flex space-x-8">
-            <li>
-              <Link href="/#features" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Features
-              </Link>
-            </li>
-            <li>
-              <Link href="/#industries" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Industries
-              </Link>
-            </li>
-            <li>
-              <Link href="/#pricing" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div className="hidden md:flex items-center">
+          <nav className="mr-8">
+            <ul className="flex space-x-8">
+              <li>
+                <Link href="/#features" className="text-gray-700 hover:text-blue-600 transition-colors">
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link href="/#industries" className="text-gray-700 hover:text-blue-600 transition-colors">
+                  Industries
+                </Link>
+              </li>
+              <li>
+                <Link href="/#pricing" className="text-gray-700 hover:text-blue-600 transition-colors">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <LoginButton variant="outline" />
+        </div>
 
         {/* Mobile Menu Button */}
         <button 
@@ -105,6 +109,13 @@ export default function Navbar() {
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="pt-2 border-t border-gray-100">
+                <LoginButton 
+                  variant="primary" 
+                  className="w-full flex justify-center"
+                  onClick={() => setIsMenuOpen(false)}
+                />
               </li>
             </ul>
           </nav>
