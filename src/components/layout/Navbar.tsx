@@ -112,11 +112,12 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="pt-2 border-t border-gray-100">
-                <LoginButton 
-                  variant="primary" 
-                  className="w-full flex justify-center"
-                  onClick={() => setIsMenuOpen(false)}
-                />
+                <div className="py-2" onClick={() => setIsMenuOpen(false)}>
+                  <LoginButton 
+                    variant="primary" 
+                    className="w-full flex justify-center"
+                  />
+                </div>
               </li>
             </ul>
           </nav>

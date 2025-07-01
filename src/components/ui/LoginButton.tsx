@@ -2,8 +2,9 @@
 
 import config from '@/config';
 import { ButtonHTMLAttributes } from 'react';
+import Link from 'next/link';
 
-interface LoginButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface LoginButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onClick'> {
   className?: string;
   variant?: 'primary' | 'secondary' | 'outline' | 'text';
 }
@@ -20,18 +21,17 @@ export default function LoginButton({
     text: 'text-blue-600 hover:text-blue-800',
   };
 
-  const handleLogin = () => {
-    // Redirect to the app URL
-    window.location.href = `${config.urls.app}/auth/login`;
-  };
+  // Construct the login URL
+  const loginUrl = `${config.urls.app}/login`;
 
   return (
-    <button
-      onClick={handleLogin}
+    <Link 
+      href={loginUrl}
       className={`font-medium transition-colors ${variantClasses[variant]} ${className}`}
-      {...props}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       Log In
-    </button>
+    </Link>
   );
 } 
