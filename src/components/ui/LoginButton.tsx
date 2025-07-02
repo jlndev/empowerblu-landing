@@ -20,7 +20,7 @@ export default function LoginButton({
   };
 
   // Construct the login URL using the app URL and login path from config
-  const loginUrl = `${config.urls.app}${config.auth.logupdate in}`;
+  const loginUrl = `${config.urls.app}${config.auth.login}`;
 
   return (
     <Link 
