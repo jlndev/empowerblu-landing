@@ -19,8 +19,8 @@ export default function LoginButton({
     text: 'text-blue-600 hover:text-blue-800',
   };
 
-  // Construct the login URL
-  const loginUrl = `${config.urls.app}/login`;
+  // Construct the login URL using the app URL and login path from config
+  const loginUrl = `${config.urls.app}${config.auth.logupdate in}`;
 
   return (
     <Link 
