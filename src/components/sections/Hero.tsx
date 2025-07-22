@@ -17,9 +17,6 @@ export default function Hero() {
             <span className="text-blue-600 font-semibold">Blu</span> is the all-in-one CRM and job management software built specifically for contractors, tradesmen, and field service companies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="#contact" variant="primary">
-              Start Free Trial
-            </Button>
             <Button href="#features" variant="outline">
               See Features
             </Button>

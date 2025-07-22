@@ -34,11 +34,6 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="text-gray-700 hover:text-blue-600 transition-colors">
-                  Pricing
-                </Link>
-              </li>
-              <li>
                 <Link href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors">
                   Contact
                 </Link>
@@ -91,15 +86,6 @@ export default function Navbar() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Industries
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/#pricing" 
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Pricing
                 </Link>
               </li>
               <li>

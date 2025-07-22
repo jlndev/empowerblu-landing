@@ -40,11 +40,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="text-gray-300 hover:text-white transition-colors">
-                  Pricing
-                </Link>
-              </li>
-              <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">
                   Mobile App
                 </a>
