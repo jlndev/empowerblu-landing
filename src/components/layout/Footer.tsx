@@ -71,9 +71,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/#contact" className="text-gray-300 hover:text-white transition-colors">
+                <a href="mailto:team@empowerblu.com" className="text-gray-300 hover:text-white transition-colors">
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
